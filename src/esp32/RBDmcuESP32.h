@@ -7,8 +7,8 @@
 #include <esp32-hal-gpio.h>
 #include "esp32/rom/ets_sys.h"
 #include "esp_attr.h"
-#include "esp_intr.h"
-#include "rom/gpio.h"
+#include "esp_intr_alloc.h"
+#include "esp32/rom/gpio.h"
 #include "soc/gpio_reg.h"
 #include "soc/io_mux_reg.h"
 #include "soc/gpio_struct.h"
