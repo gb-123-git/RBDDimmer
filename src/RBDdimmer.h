@@ -16,7 +16,8 @@ typedef enum
     ON = true
 } ON_OFF_typedef;
 
-#define ALL_DIMMERS 30
+// This has been re-defined in esp32 header file of this lib;
+//#define ALL_DIMMERS 30
 
 class dimmerLamp 
 {         
