@@ -1,5 +1,3 @@
-#if defined(ARDUINO_ARCH_ESP32)
-
 #include "RBDmcuESP32.h"
 
 
@@ -202,5 +200,3 @@ void IRAM_ATTR onTimerISR()
 	if (toggleCounter >= toggleReload) toggleCounter = 1;
 	
 }
-
-#endif
