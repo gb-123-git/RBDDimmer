@@ -5,7 +5,7 @@
 #include "RBDdimmer.h"
 #include <stdio.h>
 #include <esp32-hal-gpio.h>
-#include "rom/ets_sys.h"
+#include "esp32/rom/ets_sys.h"
 #include "esp_attr.h"
 #include "esp_intr.h"
 #include "rom/gpio.h"
