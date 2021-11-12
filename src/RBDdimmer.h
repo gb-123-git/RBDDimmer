@@ -37,13 +37,9 @@ class dimmerLamp
         int tog_max;
         int tog_min;
 		
-#if !(defined(ARDUINO_ARCH_AVR) || defined(ARDUINO_ARCH_SAMD))
         int zc_pin;
 
         dimmerLamp(int user_dimmer_pin, int zc_dimmer_pin);
-#else
-		dimmerLamp(int user_dimmer_pin);
-#endif
         void begin(DIMMER_MODE_typedef DIMMER_MODE, ON_OFF_typedef ON_OFF);
         void setPower(int power);
 		int  getPower(void);
