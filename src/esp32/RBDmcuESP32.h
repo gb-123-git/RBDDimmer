@@ -5,16 +5,24 @@
 #include "RBDdimmer.h"
 #include <stdio.h>
 #include <esp32-hal-gpio.h>
-#include "rom/ets_sys.h"
+#if defined(RBDDIMMER_ARCH_ESP32)
+    #include "esp32/rom/ets_sys.h"
+    #include "esp32/rom/gpio.h"
+#elif defined(RBDDIMMER_ARCH_ESP32S3)
+    #include "esp32s3/rom/ets_sys.h"
+    #include "esp32s3/rom/gpio.h"
+#elif !(defined(RBDDIMMER_ARCH_ESP32) || defined(RBDDIMMER_ARCH_ESP32S3))
+    #error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define RBDDIMMER_ARCH_ESP32 or RBDDIMMER_ARCH_ESP32S3"
+#endif
 #include "esp_attr.h"
-#include "esp_intr.h"
-#include "rom/gpio.h"
+#include "esp_intr_alloc.h"
 #include "soc/gpio_reg.h"
 #include "soc/io_mux_reg.h"
 #include "soc/gpio_struct.h"
 #include "soc/rtc_io_reg.h"
 
-#define ALL_DIMMERS 50
+//#define ALL_DIMMERS 50
+// This has already been defined in RBDdimmer.h file of this lib;
 
 static const uint8_t powerBuf[] = {
     100, 99, 98, 97, 96, 95, 94, 93, 92, 91,

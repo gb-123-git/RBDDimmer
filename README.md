@@ -1,3 +1,6 @@
+## Arundio I/O instruction table 
+
+
 <table style="border-collapse: separate;
   border-spacing: 0;
   padding: 5px;">
@@ -6,53 +9,6 @@
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"><b>Board</b></td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"><b>INPUT Pin <br>Zero Cross</b></td>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"><b> OUTPUT Pin</b> </td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Leonardo</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGABLE)</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D6, D8-D13</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Mega</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGABLE)</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D1, D3-D70</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" >UNO<br>NANO</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D2 (NOT CHANGABLE)</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D1, D3-D20</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">ESP8266</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">
-            <ul style="list-style-type: none; margin-left: -30px;">
-                <li >D1(IO5)</li>
-                <li >D5(IO14)</li>
-                <li >D7(IO13)</li>
-            </ul>
-        </td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">
-            <ul style="list-style-type: none; margin-left: -30px;">
-                <li >D2(IO4)</li>
-                <li >D6(IO12)</li>
-                <li >D8(IO15)</li>
-            </ul>
-        </td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">
-            <ul style="list-style-type: none; margin-left: -30px;">
-                <li >D0(IO16)</li>
-                <li >D2(IO4)</li>
-                <li >D6(IO12)</li>
-                <li >D8(IO15)</li>
-            </ul>
-        </td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">
-            <ul style="list-style-type: none; margin-left: -30px;">
-                <li >D1(IO5)</li>
-                <li >D5(IO14)</li>
-                <li >D7(IO13)</li>
-            </ul>
-        </td>
     </tr>
     <tr>
         <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">ESP32</td>
@@ -121,33 +77,15 @@
             </ul>
         </td>
     </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;">Arduino M0 <br>Arduino Zero</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D7 (NOT CHANGABLE)</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D6, D8-D13</td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"> Arduino Due</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> D0-D53</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">D0-D53 </td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;"> STM32 <br> Black Pill
-            <br> Blue Pill <br> Etc...</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2"> PA0-PA15, PB0-PB15
-            <br> PC13-PC15</td>
-        <td style="border: 1px solid #bbb; border-bottom: 1px solid #bbb; padding: 10px 15px 10px 15px;" colspan="2">PA0-PA15, PB0-PB15
-            <br> PC13-PC15</td>
-    </tr>
     </tbody>
 </table>
 
-This library can simplify user code with following functions:
+### This library can simplify user code with following functions:
 
     1. Function dimmerLamp - this function initializes the number of operating pin and is defined by the user
     Example: 
-        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
-        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards whith changable zero-cross(ESP32, ESP8266, Arduino Due)
+        a.dimmerLamp dimmer(4);    dimmer output DIM/PSM is initialized on the pin 4 for the bords WITHOUT changeable ZERO-CROSS input pin (AVR, Arduino M0/Zero)
+        b.dimmerLamp dimmer(4, 2);  dimmer output DIM/PSM is initialized on the pin 4 and zero-cross initialized on pin 2. Only for boards whith changeable zero-cross(ESP32, ESP8266, Arduino Due)
 
     2. Function begin port initialization, timer and external interrupt from zero-cross.
     Example:
@@ -185,3 +123,8 @@ This library can simplify user code with following functions:
   
     10. Function toggleSettings smooth change of dimming value up or down in a defined range
         Example located in \RBDdimmer\examples\SimpleToggleDimmer
+
+## Notes and Clarifications
+  1. The zero-cross pin is always required, but on some boards it must be a specific pin. It is not required in the constructor because it is already hard-coded to the specific pin.
+  2. `dimmer.begin()` should be called inside of Arduino's setup() function, otherwise it might cause unexpected behaviour.
+  3. When everything is set up correctly, an LED on the ACDimmer will light up only when the ACDimmer is connected to an AC power source AND the dimmer state is not OFF.

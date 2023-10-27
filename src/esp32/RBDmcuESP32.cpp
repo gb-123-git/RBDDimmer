@@ -1,4 +1,4 @@
-#if defined(ARDUINO_ARCH_ESP32)
+
 
 #include "RBDmcuESP32.h"
 
@@ -203,4 +203,3 @@ void IRAM_ATTR onTimerISR()
 	
 }
 
-#endif

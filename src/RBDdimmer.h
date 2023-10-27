@@ -3,22 +3,10 @@
 
 #include <stdlib.h>
 
-#if   defined(ARDUINO_ARCH_AVR)
-	#include "avr/RBDmcuAVR.h"
-#elif defined(ARDUINO_ARCH_ESP32)
+#if (defined(RBDDIMMER_ARCH_ESP32) || defined(RBDDIMMER_ARCH_ESP32S3))
 	#include "esp32/RBDmcuESP32.h"
-#elif defined(ARDUINO_ARCH_ESP8266)
-	#include "esp8266/RBDmcuESP8266.h"
-#elif defined(ARDUINO_ARCH_SAMD)
-	#include "samd/RBDmcuSAMD21.h"
-#elif defined(ARDUINO_ARCH_SAM)
-	#include "sam/RBDmcuSAM.h"
-#elif defined(ARDUINO_ARCH_STM32F1)
-	#include "stm32duino/STM32F1/RBDmcuSTM32F1.h"
-#elif defined(ARDUINO_ARCH_STM32F4)
-	#include "stm32duino/STM32F4/RBDmcuSTM32F4.h"
 #else 
-	#error "This library only supports boards with an AVR, ESP32, ESP8266, SAMD, SAM, STM32F1/F4 processor."
+	#error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define RBDDIMMER_ARCH_ESP32 or RBDDIMMER_ARCH_ESP32S3"
 #endif
 
 typedef enum
@@ -52,14 +40,10 @@ class dimmerLamp
         int dimmer_pin;
         int tog_max;
         int tog_min;
-		
-#if !(defined(ARDUINO_ARCH_AVR) || defined(ARDUINO_ARCH_SAMD))
         int zc_pin;
 
         dimmerLamp(int user_dimmer_pin, int zc_dimmer_pin);
-#else
-		dimmerLamp(int user_dimmer_pin);
-#endif
+
         void begin(DIMMER_MODE_typedef DIMMER_MODE, ON_OFF_typedef ON_OFF);
         void setPower(int power);
 		int  getPower(void);
