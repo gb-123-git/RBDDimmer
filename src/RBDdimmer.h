@@ -3,10 +3,10 @@
 
 #include <stdlib.h>
 
-#if (defined(RBDDIMMER_ARCH_ESP32) || defined(RBDDIMMER_ARCH_ESP32S3))
+#if (defined(PMGA_ARCH_ESP32) || defined(PMGA_ARCH_ESP32S3))
 	#include "esp32/RBDmcuESP32.h"
 #else 
-	#error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define RBDDIMMER_ARCH_ESP32 or RBDDIMMER_ARCH_ESP32S3"
+	#error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define PMGA_ARCH_ESP32 or PMGA_ARCH_ESP32S3"
 #endif
 
 typedef enum

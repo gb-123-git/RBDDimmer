@@ -5,14 +5,14 @@
 #include "RBDdimmer.h"
 #include <stdio.h>
 #include <esp32-hal-gpio.h>
-#if defined(RBDDIMMER_ARCH_ESP32)
+#if defined(PMGA_ARCH_ESP32)
     #include "esp32/rom/ets_sys.h"
     #include "esp32/rom/gpio.h"
-#elif defined(RBDDIMMER_ARCH_ESP32S3)
+#elif defined(PMGA_ARCH_ESP32S3)
     #include "esp32s3/rom/ets_sys.h"
     #include "esp32s3/rom/gpio.h"
-#elif !(defined(RBDDIMMER_ARCH_ESP32) || defined(RBDDIMMER_ARCH_ESP32S3))
-    #error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define RBDDIMMER_ARCH_ESP32 or RBDDIMMER_ARCH_ESP32S3"
+#elif !(defined(PMGA_ARCH_ESP32) || defined(PMGA_ARCH_ESP32S3))
+    #error "This library only supports boards with an ESP32 & ESP32-S3 processors. Must Define PMGA_ARCH_ESP32 or PMGA_ARCH_ESP32S3"
 #endif
 #include "esp_attr.h"
 #include "esp_intr_alloc.h"
